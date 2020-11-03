@@ -23,8 +23,8 @@ namespace BOL.Domain
         public int CompanyId { get; set; }
         [ForeignKey("CompanyId")]
         public virtual Company company { get; set; }
-        public int CategoryId { get; set; }
+        public int categoryId { get; set; }
         [ForeignKey("CategoryId")]
-        public virtual Category Category { get; set; }
+        public virtual Category category { get; set; }
     }
 }
