@@ -56,33 +56,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Data\BaseEntity.cs" />
+    <Compile Include="Data\IRepositry.cs" />
     <Compile Include="DbContext\SetServiceDbContext.cs" />
     <Compile Include="Domain\Category.cs" />
     <Compile Include="Domain\Company.cs" />
     <Compile Include="Domain\Service.cs" />
     <Compile Include="Domain\User.cs" />
     <Compile Include="Domain\UserService.cs" />
-    <Compile Include="Migrations\202010202204030_InitialDb.cs" />
-    <Compile Include="Migrations\202010202204030_InitialDb.Designer.cs">
-      <DependentUpon>202010202204030_InitialDb.cs</DependentUpon>
+    <Compile Include="Enum\UserRoles.cs" />
+    <Compile Include="Migrations\202012142139077_initialDb.cs" />
+    <Compile Include="Migrations\202012142139077_initialDb.Designer.cs">
+      <DependentUpon>202012142139077_initialDb.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011032051577_UserUserServiceRelationAdded.cs" />
-    <Compile Include="Migrations\202011032051577_UserUserServiceRelationAdded.Designer.cs">
-      <DependentUpon>202011032051577_UserUserServiceRelationAdded.cs</DependentUpon>
+    <Compile Include="Migrations\202012142141314_UserUserServiceRelationAdded.cs" />
+    <Compile Include="Migrations\202012142141314_UserUserServiceRelationAdded.Designer.cs">
+      <DependentUpon>202012142141314_UserUserServiceRelationAdded.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011032055187_ServiceUserServiceRelationAdded.cs" />
-    <Compile Include="Migrations\202011032055187_ServiceUserServiceRelationAdded.Designer.cs">
-      <DependentUpon>202011032055187_ServiceUserServiceRelationAdded.cs</DependentUpon>
+    <Compile Include="Migrations\202012142142368_ServiceUserServiceRelationAdded.cs" />
+    <Compile Include="Migrations\202012142142368_ServiceUserServiceRelationAdded.Designer.cs">
+      <DependentUpon>202012142142368_ServiceUserServiceRelationAdded.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011032056235_CompanyServiceRelationAdded.cs" />
-    <Compile Include="Migrations\202011032056235_CompanyServiceRelationAdded.Designer.cs">
-      <DependentUpon>202011032056235_CompanyServiceRelationAdded.cs</DependentUpon>
+    <Compile Include="Migrations\202012142144390_CompanyServiceRelationAdded.cs" />
+    <Compile Include="Migrations\202012142144390_CompanyServiceRelationAdded.Designer.cs">
+      <DependentUpon>202012142144390_CompanyServiceRelationAdded.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202011032057418_CategoryServiceRelationAdded.cs" />
-    <Compile Include="Migrations\202011032057418_CategoryServiceRelationAdded.Designer.cs">
-      <DependentUpon>202011032057418_CategoryServiceRelationAdded.cs</DependentUpon>
+    <Compile Include="Migrations\202012142146083_CategoryServiceRelationAdded.cs" />
+    <Compile Include="Migrations\202012142146083_CategoryServiceRelationAdded.Designer.cs">
+      <DependentUpon>202012142146083_CategoryServiceRelationAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,20 +93,20 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202010202204030_InitialDb.resx">
-      <DependentUpon>202010202204030_InitialDb.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202012142139077_initialDb.resx">
+      <DependentUpon>202012142139077_initialDb.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011032051577_UserUserServiceRelationAdded.resx">
-      <DependentUpon>202011032051577_UserUserServiceRelationAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202012142141314_UserUserServiceRelationAdded.resx">
+      <DependentUpon>202012142141314_UserUserServiceRelationAdded.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011032055187_ServiceUserServiceRelationAdded.resx">
-      <DependentUpon>202011032055187_ServiceUserServiceRelationAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202012142142368_ServiceUserServiceRelationAdded.resx">
+      <DependentUpon>202012142142368_ServiceUserServiceRelationAdded.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011032056235_CompanyServiceRelationAdded.resx">
-      <DependentUpon>202011032056235_CompanyServiceRelationAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202012142144390_CompanyServiceRelationAdded.resx">
+      <DependentUpon>202012142144390_CompanyServiceRelationAdded.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202011032057418_CategoryServiceRelationAdded.resx">
-      <DependentUpon>202011032057418_CategoryServiceRelationAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202012142146083_CategoryServiceRelationAdded.resx">
+      <DependentUpon>202012142146083_CategoryServiceRelationAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

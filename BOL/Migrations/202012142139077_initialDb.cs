@@ -3,7 +3,7 @@ namespace BOL.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialDb : DbMigration
+    public partial class initialDb : DbMigration
     {
         public override void Up()
         {

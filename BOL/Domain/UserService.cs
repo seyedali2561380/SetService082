@@ -10,6 +10,7 @@ namespace BOL.Domain
 {
     public class UserService : BaseEntity
     {
+        
         public string UserId { get; set; }
         [ForeignKey("UserId")]
         public virtual User user { get; set; }

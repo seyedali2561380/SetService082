@@ -13,7 +13,7 @@ namespace BOL.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202011032051577_UserUserServiceRelationAdded"; }
+            get { return "202012142141314_UserUserServiceRelationAdded"; }
         }
         
         string IMigrationMetadata.Source

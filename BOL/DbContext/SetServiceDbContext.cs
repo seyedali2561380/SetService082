@@ -29,7 +29,7 @@ namespace BOL.DbContext
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Company> Companies { get; set; }
         public virtual DbSet<Service> Services { get; set; }
-        public virtual DbSet<UserService> UserService { get; set; }
+        public virtual DbSet<UserService> UserServices { get; set; }
         public static SetServiceDbContext Create()
         {
             return new SetServiceDbContext();

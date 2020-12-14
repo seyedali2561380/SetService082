@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BOL
+namespace BOL.Enum
 {
-    public class Class1
+ public enum UserRoles
     {
+        Admin=0,
+        Customer=1
+
     }
 }

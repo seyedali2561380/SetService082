@@ -7,13 +7,13 @@ namespace BOL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class CompanyServiceRelationAdded : IMigrationMetadata
+    public sealed partial class CategoryServiceRelationAdded : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(CompanyServiceRelationAdded));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(CategoryServiceRelationAdded));
         
         string IMigrationMetadata.Id
         {
-            get { return "202011032056235_CompanyServiceRelationAdded"; }
+            get { return "202012142146083_CategoryServiceRelationAdded"; }
         }
         
         string IMigrationMetadata.Source
