@@ -1,5 +1,9 @@
 namespace BOL.Migrations
 {
+    using BOL.Domain;
+    using BOL.Enum;
+    using Microsoft.AspNet.Identity;
+    using Microsoft.AspNet.Identity.EntityFramework;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
@@ -26,6 +30,42 @@ namespace BOL.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+            var roleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
+            var userManager = new UserManager<User>(new UserStore<User>(context));
+
+            if (!roleManager.RoleExists(UserRoles.Admin.ToString()))
+            {
+                var adminRole = new IdentityRole
+                {
+                    Name = UserRoles.Admin.ToString()
+                };
+                roleManager.Create(adminRole);
+                var adminUser = new User
+                {
+                    Name = "Rezvan",
+                    Family = "Rezvani",
+                    Email = "Rezvan@gmail.com",
+                    PhoneNumber = "090000000",
+                    NationalCode = "00000000000",
+                    UserName = "Rezvan",
+                    EmailConfirmed = true,
+                    PhoneNumberConfirmed = true,
+                
+                };
+                var result = userManager.Create(adminUser, "1234");
+                if (result.Succeeded)
+                {
+                    userManager.AddToRole(adminUser.Id, UserRoles.Admin.ToString());
+                }
+
+            }
+            if (!roleManager.RoleExists(UserRoles.Customer.ToString()))
+            {
+                roleManager.Create(new IdentityRole { Name = UserRoles.Customer.ToString() });
+          
+            }
+
+            context.SaveChanges();
         }
     }
 }
